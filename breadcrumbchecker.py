@@ -3,8 +3,14 @@ from bs4 import BeautifulSoup
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(
+    page_title="Breadcrumbs Microdata Checker",
+    page_icon="🌠",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
-st.title("Breadcrumb Microdata Checker")
+st.title("Breadcrumbs Microdata Checker")
 
 # Create a radio button to select whether or not the site requires authorization
 requires_auth = st.radio("Does the site require authorization?", ("Yes", "No"))
